@@ -1,0 +1,199 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+}
+
+/* Header Styling */
+header {
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b6584;
+}
+
+nav .logo span {
+    color: #0984e3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+/* Login Button Styling */
+/* Remove underline and set consistent color for nav links */
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Set the desired color (dark gray) */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+/* Login Button Styling */
+nav ul li .login-btn {
+    background-color: #d6eaff; /* Light blue shade */
+    color: #0984e3;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #0984e3;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li .login-btn:hover {
+    background-color: #b3d9ff;
+    color: #075ea6;
+}
+
+
+nav ul li a:hover {
+    color: #0984e3; /* Change color on hover */
+}
+
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #eaf4ff;
+}
+
+.content {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #4b6584;
+}
+
+h1 span {
+    color: #0984e3;
+}
+
+p {
+    font-size: 16px;
+    color: #4b6584;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0984e3;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #075ea6;
+}
+
+/* Image Styling */
+.image img {
+    width: 100%; /* Makes it scale with the screen size */
+    max-width: 800px; /* Limits the size */
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+footer {
+    background-color: #d6eaff; /* Light blue for calmness */
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-resources {
+    max-width: 300px;
+}
+
+.footer-about h3,
+.footer-contact h3,
+.footer-resources h3 {
+    color: #0984e3; /* Blue for headings */
+    margin-bottom: 10px;
+}
+
+.footer-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-resources ul li {
+    margin: 5px 0;
+}
+
+.footer-resources a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-resources a:hover {
+    color: #0984e3;
+}
+
+.footer-bottom {
+    background-color: #b3d9ff; /* Slightly deeper blue */
+    padding: 10px 0;
+    margin-top: 20px;
+    font-weight: bold;
+}
